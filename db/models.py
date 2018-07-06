@@ -133,7 +133,7 @@ class Merchant(BASE, ScoreBase):
     gb_exchange_count = Column(Integer, nullable=False, default=0)
 
 
-#  客户信息表
+#  会员信息表
 class Customer(BASE, ScoreBase):
     """Represents a customer
     """
@@ -156,9 +156,24 @@ class Customer(BASE, ScoreBase):
     gain_money = Column(Integer, nullable=False, default=0)
 
 
-#  金豆兑换规则表
+#  会员信息表
+class Goods(BASE, ScoreBase):
+    """Represents a goods
+    """
+    __tablename__ = 'goods'
+    id = Column(String(length=128), nullable=False, default=uuid.uuid1, primary_key=True)
+    merchant_id = Column(String(128), nullable=False)
+    serial_num = Column(String(255), nullable=False)
+    name = Column(String(255), nullable=False)
+    price = Column(Integer, nullable=False)
+    offer = Column(Integer, nullable=False)
+    stock = Column(Integer, nullable=False)
+    sales_amount = Column(Integer, nullable=False, default=0)
+
+
+#  积分兑换规则表
 class Rule(BASE, ScoreBase):
-    """Represents a rule,type为0代表金豆,type为1代表人民币
+    """Represents a rule,type为0代表积分,type为1代表人民币
     """
     __tablename__ = 'rule'
     id = Column(String(length=128), nullable=False, default=uuid.uuid1, primary_key=True)
@@ -174,7 +189,7 @@ class Rule(BASE, ScoreBase):
     rule_info = Column(String(128), nullable=False)
 
 
-#  金豆活动表
+#  积分活动表
 class Activity(BASE, ScoreBase):
     """Represents a activity
     """
@@ -193,8 +208,10 @@ class Consume(BASE, ScoreBase):
     __tablename__ = 'consume'
     id = Column(String(length=128), nullable=False, default=uuid.uuid1, primary_key=True)
     merchant_id = Column(String(128), nullable=False)
+    goods_id = Column(String(128), nullable=False)
     customer_id = Column(String(128), nullable=True)
     consumer_name = Column(String(128), nullable=False)
+    consumer_phone = Column(String(128), nullable=False)
     consume_money = Column(Integer, nullable=False)
     multiple = Column(Float, nullable=False)
     consume_content = Column(String(255), nullable=True)

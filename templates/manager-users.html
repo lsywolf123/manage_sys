@@ -99,7 +99,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="" href="/index"><span class="navbar-brand"><span
-                    class="fa fa-paper-plane"></span> 金豆管理系统</span></a>
+                    class="fa fa-paper-plane"></span> 积分管理系统</span></a>
         </div>
         <div class="navbar-collapse collapse" style="height: 1px;">
             <ul id="main-menu" class="nav navbar-nav navbar-right">
@@ -131,12 +131,12 @@
                     <li><a href="/add-merchant"><span class="fa fa-caret-right"></span> 新增商户</a></li>
                 </ul>
             </li>
-            <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i class="fa fa-fw fa-fighter-jet"></i> 客户管理<i class="fa fa-collapse"></i></a></li>
+            <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i class="fa fa-fw fa-fighter-jet"></i> 会员管理<i class="fa fa-collapse"></i></a></li>
             <li>
                 <ul class="premium-menu nav nav-list collapse">
-                    <li><a href="/manager-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 客户列表</a></li>
-                    <li><a href="/add-customer"><span class="fa fa-caret-right"></span> 新增客户</a></li>
-                    <li><a href="/add-customer-list?page=1"><span class="fa fa-caret-right"></span> 新增客户查询</a></li>
+                    <li><a href="/manager-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 会员列表</a></li>
+                    <li><a href="/add-customer"><span class="fa fa-caret-right"></span> 新增会员</a></li>
+                    <li><a href="/add-customer-list?page=1"><span class="fa fa-caret-right"></span> 新增会员查询</a></li>
                 </ul>
             </li>
         </ul>
@@ -174,9 +174,9 @@
                         <th>#</th>
                         <th><a href="#">商户名称</a></th>
                         <th><a href="#">店主姓名</a></th>
-                        <th>联系方式</a></th>
-                        <th>截止日期</a></th>
-                        <th>状态</a></th>
+                        <th><a>联系方式</a></th>
+                        <th><a>截止日期</a></th>
+                        <th><a>状态</a></th>
                         <th style="width: 3.5em;"></th>
                     </tr>
                 </thead>
@@ -223,7 +223,7 @@
                             <p class="error-text"><i class="fa fa-warning modal-icon"></i>你确定要删除该用户?<br>删除后无法恢复</p>
                         </div>
                         <div class="modal-footer">
-                            <input id='id' name='id' value="$('test').data('id')">
+                            <input type="hidden" id='id' name='id' value="$('test').data('id')">
                             <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">取消</button>
                             <button class="btn btn-danger" data-dismiss="modal" onclick="delete_by_id();load();">删除</button>
                         </div>
@@ -271,7 +271,7 @@
         function load() {
                     location.reload();
         }
-    </script>
+        </script>
 
 
 </body></html>

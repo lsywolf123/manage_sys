@@ -131,6 +131,8 @@ class MerchantCustomerConsumptHandle(BaseHandler):
         username = self.get_secure_cookie('username')
         info = {'consume_money': '',
                 'consumer_name': '',
+                'consumer_phone': '',
+                'goods_serial_num': '',
                 'consume_content': '',
                 'serial_num': '',
                 'username': username,
@@ -141,17 +143,25 @@ class MerchantCustomerConsumptHandle(BaseHandler):
     def post(self):
         consume_money = self.get_argument('consume_money')
         consumer_name = self.get_argument('consumer_name')
+        consumer_phone = self.get_argument('consumer_phone')
+        goods_serial_num = self.get_argument('goods_serial_num')
         consume_content = self.get_argument('consume_content')
         serial_num = self.get_argument('serial_num')
         username = self.get_secure_cookie('username')
         merchant_id = self.get_secure_cookie('merchant_id')
         message = None
-        if not consume_money:
-            message = '消费金额为必填项'
-        elif not consumer_name:
+        if not consumer_name:
             message = '消费人姓名为必填项'
+        if not consumer_phone:
+            message = '消费人电话为必填项'
+        if not goods_serial_num:
+            message = '消费产品编号为必填项'
+        elif not consume_money:
+            message = '消费金额为必填项'
         info = {'consume_money': consume_money,
                 'consumer_name': consumer_name,
+                'consumer_phone': consumer_phone,
+                'goods_serial_num': goods_serial_num,
                 'consume_content': consume_content,
                 'serial_num': serial_num,
                 'username': username,
@@ -161,13 +171,13 @@ class MerchantCustomerConsumptHandle(BaseHandler):
             self.render('merchant-user-consumpt.html', **info)
             return
         try:
-            ref = consume.general_consume_info(merchant_id, consumer_name, consume_money, consume_content, serial_num)
+            ref = consume.general_consume_info(merchant_id, goods_serial_num, consumer_name, consumer_phone, consume_money, consume_content, serial_num)
         except Exception as e:
             info['message'] = e.message
             self.render('merchant-user-consumpt.html', **info)
             return
         if ref:
-            self.render('merchant-user-consumpt.html', consumer_name='', consume_money='', consume_content='',
+            self.render('merchant-user-consumpt.html', goods_serial_num='', consumer_name='', consume_money='', consumer_phone='', consume_content='',
                         serial_num='', username=username, message='提交成功')
 
 
@@ -352,11 +362,11 @@ class MerchantExchangeGoldbeanHandle(BaseHandler):
                 }
         message = None
         if not serial_num:
-            message = '客户编号为必填项'
+            message = '会员编号为必填项'
         elif not name:
-            message = '客户姓名为必填项'
+            message = '会员姓名为必填项'
         elif not identify_id:
-            message = '客户身份证号为必填项'
+            message = '会员身份证号为必填项'
         elif not password:
             message = '管理员密码为必填项'
         if message:
@@ -505,39 +515,107 @@ class MerchantGiveGbHandle(BaseHandler):
                         gb_num='', password='')
 
 
-class MerchantUpdatePasswordHandle(BaseHandler):
+class MerchantAccountBookHandle(BaseHandler):
     @authenticated
     def get(self):
         if self.get_secure_cookie('role') != '2':
             self.redirect('/index')
         username = self.get_secure_cookie('username')
-        self.render('merchant-update-password.html', username=username, message='')
+        merchant_id = self.get_secure_cookie('merchant_id')
+        year_list = merchant.merchant_account_book_year_list(merchant_id)
+        data_dict = merchant.merchant_account_book(merchant_id, '0', year_list[0])
+        info = {
+            'type': '0',
+            'year': year_list[0],
+            'username': username,
+            'year_list': year_list,
+            'data_dict': data_dict,
+        }
+        self.render('merchant-account-book.html', **info)
 
     def post(self):
         merchant_id = self.get_secure_cookie('merchant_id')
         username = self.get_secure_cookie('username')
-        old_password = self.get_argument('old_password')
-        new_password1 = self.get_argument('new_password1')
-        new_password2 = self.get_argument('new_password2')
-        message = None
-        if not old_password:
-            message = '旧密码为必填项'
-        elif not new_password1:
-            message = '新密码为必填项'
-        elif not new_password2:
-            message = '请确认新密码'
-        elif new_password1 != new_password2:
-            message = '两次密码不一致'
-        if message:
-            self.render('merchant-give-goldbean.html', username=username, message=message)
-            return
-        try:
-            merchant.check_password(merchant_id, old_password)
-            ref = merchant.update_password(new_password1)
-        except Exception as e:
-            self.render('merchant-give-goldbean.html', username=username, message=e.message, customer_id=customer_id,
-                        gb_num='', password='')
-            return
-        if ref:
-            self.render('merchant-give-goldbean.html', username=username, message='赠送成功', customer_id=customer_id,
-                        gb_num='', password='')
+        type = self.get_argument('type')
+        year = self.get_argument('year')
+        year_list = merchant.merchant_account_book_year_list(merchant_id)
+        data_dict = merchant.merchant_account_book(merchant_id, type, year)
+        info = {
+            'type': type,
+            'year': year,
+            'username': username,
+            'year_list': year_list,
+            'data_dict': data_dict,
+        }
+        self.render('merchant-account-book.html', **info)
+
+
+class MerchantAccountAnalysisHandle(BaseHandler):
+    @authenticated
+    def get(self):
+        if self.get_secure_cookie('role') != '2':
+            self.redirect('/index')
+        username = self.get_secure_cookie('username')
+        merchant_id = self.get_secure_cookie('merchant_id')
+        year_list = merchant.merchant_account_book_year_list(merchant_id)
+        data_dict = merchant.merchant_account_book(merchant_id, '0', year_list[0])
+        info = {
+            'type': '0',
+            'year': year_list[0],
+            'username': username,
+            'year_list': year_list,
+            'data_dict': data_dict,
+        }
+        self.render('merchant-account-analysis.html', **info)
+
+    def post(self):
+        merchant_id = self.get_secure_cookie('merchant_id')
+        username = self.get_secure_cookie('username')
+        type = self.get_argument('type')
+        year = self.get_argument('year')
+        year_list = merchant.merchant_account_book_year_list(merchant_id)
+        data_dict = merchant.merchant_account_book(merchant_id, type, year)
+        info = {
+            'type': type,
+            'year': year,
+            'username': username,
+            'year_list': year_list,
+            'data_dict': data_dict,
+        }
+        self.render('merchant-account-analysis.html', **info)
+
+
+class MerchantConsumeInfoHandle(BaseHandler):
+    @authenticated
+    def get(self):
+        if self.get_secure_cookie('role') != '2':
+            self.redirect('/index')
+        username = self.get_secure_cookie('username')
+        merchant_id = self.get_secure_cookie('merchant_id')
+        year_list = merchant.merchant_account_book_year_list(merchant_id)
+        month = datetime_toString(datetime.datetime.now()).split('-')[1]
+        data_list = consume.merchant_account_book(merchant_id, year_list[0], month)
+        info = {
+            'month': month,
+            'year': year_list[0],
+            'username': username,
+            'year_list': year_list,
+            'data_list': data_list,
+        }
+        self.render('merchant-consume-info.html', **info)
+
+    def post(self):
+        username = self.get_secure_cookie('username')
+        merchant_id = self.get_secure_cookie('merchant_id')
+        year_list = merchant.merchant_account_book_year_list(merchant_id)
+        year = self.get_argument('year')
+        month = self.get_argument('month')
+        data_list = consume.merchant_account_book(merchant_id, year, month)
+        info = {
+            'month': month,
+            'year': year,
+            'username': username,
+            'year_list': year_list,
+            'data_list': data_list,
+        }
+        self.render('merchant-consume-info.html', **info)

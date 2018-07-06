@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e39497d-fe8d-4065-8334-083b4176e249" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/lib/echarts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/api.py" afterPath="$PROJECT_DIR$/db/api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/models.py" afterPath="$PROJECT_DIR$/db/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/session.py" afterPath="$PROJECT_DIR$/db/session.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/table_inition.py" afterPath="$PROJECT_DIR$/db/table_inition.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handle/merchant.py" afterPath="$PROJECT_DIR$/handle/merchant.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operation/consume.py" afterPath="$PROJECT_DIR$/operation/consume.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operation/customer.py" afterPath="$PROJECT_DIR$/operation/customer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operation/exception.py" afterPath="$PROJECT_DIR$/operation/exception.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operation/manager.py" afterPath="$PROJECT_DIR$/operation/manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operation/merchant.py" afterPath="$PROJECT_DIR$/operation/merchant.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/customer-goldbean-activity.html" afterPath="$PROJECT_DIR$/templates/customer-goldbean-activity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/customer-goldbean-info.html" afterPath="$PROJECT_DIR$/templates/customer-goldbean-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/customer-index.html" afterPath="$PROJECT_DIR$/templates/customer-index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/customer-info-update.html" afterPath="$PROJECT_DIR$/templates/customer-info-update.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/customer-info.html" afterPath="$PROJECT_DIR$/templates/customer-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-add-customer-info.html" afterPath="$PROJECT_DIR$/templates/manager-add-customer-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-add-customer-list.html" afterPath="$PROJECT_DIR$/templates/manager-add-customer-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-add-customer.html" afterPath="$PROJECT_DIR$/templates/manager-add-customer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-add-user.html" afterPath="$PROJECT_DIR$/templates/manager-add-user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-customer-info.html" afterPath="$PROJECT_DIR$/templates/manager-customer-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-customers.html" afterPath="$PROJECT_DIR$/templates/manager-customers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-index.html" afterPath="$PROJECT_DIR$/templates/manager-index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-update-user.html" afterPath="$PROJECT_DIR$/templates/manager-update-user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/manager-users.html" afterPath="$PROJECT_DIR$/templates/manager-users.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-bind.html" afterPath="$PROJECT_DIR$/templates/merchant-bind.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-consume-list.html" afterPath="$PROJECT_DIR$/templates/merchant-consume-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-exchange-goldbean.html" afterPath="$PROJECT_DIR$/templates/merchant-exchange-goldbean.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-exchange-list.html" afterPath="$PROJECT_DIR$/templates/merchant-exchange-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-give-goldbean.html" afterPath="$PROJECT_DIR$/templates/merchant-give-goldbean.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-goldbean.html" afterPath="$PROJECT_DIR$/templates/merchant-goldbean.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-index.html" afterPath="$PROJECT_DIR$/templates/merchant-index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-rule.html" afterPath="$PROJECT_DIR$/templates/merchant-rule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-update-goldbean.html" afterPath="$PROJECT_DIR$/templates/merchant-update-goldbean.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-update-rule-info.html" afterPath="$PROJECT_DIR$/templates/merchant-update-rule-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-update-rule.html" afterPath="$PROJECT_DIR$/templates/merchant-update-rule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-user-consumpt.html" afterPath="$PROJECT_DIR$/templates/merchant-user-consumpt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-user-consumption.html" afterPath="$PROJECT_DIR$/templates/merchant-user-consumption.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-user-info.html" afterPath="$PROJECT_DIR$/templates/merchant-user-info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/merchant-users.html" afterPath="$PROJECT_DIR$/templates/merchant-users.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sign-in.html" afterPath="$PROJECT_DIR$/templates/sign-in.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="$PROJECT_DIR$/templates/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/update-password.html" afterPath="$PROJECT_DIR$/templates/update-password.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/bonier_score$user.coverage" NAME="user Coverage Results" MODIFIED="1528729185168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/operation" />
+    <SUITE FILE_PATH="coverage/bonier_score$rank.coverage" NAME="rank Coverage Results" MODIFIED="1529746029154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bonier_score$merchant.coverage" NAME="merchant Coverage Results" MODIFIED="1530792109479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/operation" />
+    <SUITE FILE_PATH="coverage/bonier_score$table_inition.coverage" NAME="table_inition Coverage Results" MODIFIED="1530698292678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db" />
+    <SUITE FILE_PATH="coverage/bonier_score$spider.coverage" NAME="spider Coverage Results" MODIFIED="1524128613032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bonier_score$merchant__1_.coverage" NAME="merchant (1) Coverage Results" MODIFIED="1530806203329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/handle" />
+    <SUITE FILE_PATH="coverage/bonier_score$main.coverage" NAME="main Coverage Results" MODIFIED="1530867436032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bonier_score$consume.coverage" NAME="consume Coverage Results" MODIFIED="1530867422213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/operation" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1957">
+              <caret line="103" column="9" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="103" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merchant-account-book.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/merchant-account-book.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merchant-consume-info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/merchant-consume-info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="270" column="5" lean-forward="false" selection-start-line="270" selection-start-column="5" selection-end-line="270" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handle/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merchant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handle/merchant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9044">
+              <caret line="481" column="26" lean-forward="false" selection-start-line="481" selection-start-column="6" selection-end-line="481" selection-end-column="26" />
+              <folding>
+                <element signature="e#62#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merchant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation/merchant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6954">
+              <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="372" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consume.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation/consume.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="263" column="78" lean-forward="false" selection-start-line="263" selection-start-column="78" selection-end-line="263" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="581" column="19" lean-forward="true" selection-start-line="581" selection-start-column="19" selection-end-line="581" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>5000</find>
+      <find>1000</find>
+      <find>print</find>
+      <find>user</find>
+      <find>user_create</find>
+      <find>k</find>
+      <find>客户</find>
+      <find>金豆商家管理后台</find>
+      <find>金豆商家管理</find>
+      <find>金豆商家管理系统</find>
+      <find>金豆</find>
+      <find>= Column(</find>
+      <find>merchant</find>
+      <find>if_exist_in_db</find>
+      <find>host_nam</find>
+      <find>merchant_list</find>
+      <find>merchant-user-consumpti</find>
+      <find>created_at &gt;=</find>
+      <find>consume_list_by_created_at</find>
+      <find>merchantupdatepas</find>
+      <find>datetime_toString</find>
+      <find>MerchantGiveGbHandle</find>
+      <find>jquery</find>
+      <find>/index</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>会员</replace>
+      <replace>商家管理后台</replace>
+      <replace>商家管理系统</replace>
+      <replace>积分</replace>
+      <replace>Column('',</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/manager-customer-info.html" />
+        <option value="$PROJECT_DIR$/spider.py" />
+        <option value="$PROJECT_DIR$/operation/manager.py" />
+        <option value="$PROJECT_DIR$/db/session.py" />
+        <option value="$PROJECT_DIR$/rank.py" />
+        <option value="$PROJECT_DIR$/templates/lib/highchart.js" />
+        <option value="$PROJECT_DIR$/templates/lib/data.js" />
+        <option value="$PROJECT_DIR$/handle/goods.py" />
+        <option value="$PROJECT_DIR$/db/models.py" />
+        <option value="$PROJECT_DIR$/db/table_inition.py" />
+        <option value="$PROJECT_DIR$/operation/exception.py" />
+        <option value="$PROJECT_DIR$/templates/merchant-account_book.html" />
+        <option value="$PROJECT_DIR$/handle/test.py" />
+        <option value="$PROJECT_DIR$/operation/goods.py" />
+        <option value="$PROJECT_DIR$/templates/manager-users.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-index.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-account-analysis.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-account-book.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-add-goods.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-bind.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-consume-list.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-exchange-goldbean.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-exchange-list.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-give-goldbean.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-goldbean.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-goods-list.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-rule.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-update-goldbean.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-update-goods.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-update-rule.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-update-rule-info.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-user-consumpt.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-user-consumption.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-user-info.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-users.html" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/operation/merchant.py" />
+        <option value="$PROJECT_DIR$/handle/merchant.py" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/templates/merchant-consume-info.html" />
+        <option value="$PROJECT_DIR$/operation/consume.py" />
+        <option value="$PROJECT_DIR$/db/api.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="5" />
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonier_score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonier_score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonier_score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonier_score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonier_score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bonier_score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bonier_score\templates\lib" />
+      <recent name="G:\bonier_score\templates" />
+      <recent name="G:\bonier_score" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.consume">
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="table_inition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/table_inition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="consume" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/operation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/operation/consume.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="merchant" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/operation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/operation/merchant.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="merchant (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/handle" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handle/merchant.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="bonier_score" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bonier_score" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.table_inition" />
+      <item index="2" class="java.lang.String" itemvalue="Python.consume" />
+      <item index="3" class="java.lang.String" itemvalue="Python.merchant" />
+      <item index="4" class="java.lang.String" itemvalue="Python.merchant (1)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.consume" />
+        <item index="2" class="java.lang.String" itemvalue="Python.merchant (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.merchant" />
+        <item index="4" class="java.lang.String" itemvalue="Python.table_inition" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructuralSearchPlugin">
+    <replaceConfiguration name="user defined" created="1530802928371" text="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;        &lt;ul&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goods-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 产品管理&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费明细&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-book&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 财务报表&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-analysis&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 分析报表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;        &lt;ul&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goods-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 产品管理&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费列表&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-book&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 财务报表&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-analysis&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 分析报表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员总览&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530802756458" text="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-consumpt&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员消费&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="    &lt;div class=&quot;sidebar-nav&quot;&gt;&#10;        &lt;ul&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goods-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 产品管理&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费明细&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-book&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 财务报表&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-analysis&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 分析报表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530802678670" text="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-goods-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 产品管理&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费明细&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 财务报表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 分析报表&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="    &lt;div class=&quot;sidebar-nav&quot;&gt;&#10;        &lt;ul&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goods-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 产品管理&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费明细&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-book&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 财务报表&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-account-analysis&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 分析报表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530606366198" text="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-consumpt&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员消费&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;        &lt;ul&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-consumpt&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员消费&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530606318774" text="class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530606263222" text="            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530606213068" text="&lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;        class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;&lt;li&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="&lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;        class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;&lt;li&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530606145879" text="        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;" history="1" />
+    <replaceConfiguration name="user defined" created="1530605863247" text="&lt;div class=&quot;sidebar-nav&quot;&gt;&#10;    &lt;ul&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;dashboard-menu nav nav-list collapse in&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-consumpt&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员消费&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&#10;                &lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="    &lt;div class=&quot;sidebar-nav&quot;&gt;&#10;        &lt;ul&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 基础管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse in&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-consumpt&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员消费&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.dashboard-menu&quot; class=&quot;nav-header&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-dashboard&quot;&gt;&lt;/i&gt; 会员管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;dashboard-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/index&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 总览&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-bind-customer&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 绑定会员&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-customer-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 会员列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-consume-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 消费列表&lt;/a&gt;&#10;                    &lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot; data-target=&quot;.premium-menu&quot; class=&quot;nav-header collapsed&quot; data-toggle=&quot;collapse&quot;&gt;&lt;i&#10;                    class=&quot;fa fa-fw fa-fighter-jet&quot;&gt;&lt;/i&gt; 积分运营管理&lt;i class=&quot;fa fa-collapse&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li&gt;&#10;                &lt;ul class=&quot;premium-menu nav nav-list collapse&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-rule&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换规则&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 积分活动&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-goldbean&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换积分&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;/merchant-exchange-list?page=1&amp;type=&amp;content=&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt; 兑换列表&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;" history="1" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e39497d-fe8d-4065-8334-083b4176e249" name="Default" comment="" />
+      <created>1505225393750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505225393750</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="5" y="0" width="1920" height="1040" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17849462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.50215054" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296582" sideWeight="0.49784946" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.49784946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.50215054" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296582" sideWeight="0.49784946" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17526881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.49784946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rank.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operation/goods.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/handle/goods.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/handle/goods.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/handle/merchant.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operation/consume.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/operation/merchant.py</url>
+          <line>391</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/handle/merchant.py</url>
+          <line>596</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="44" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="type" />
+        <watch expression="value_dict['data_list']" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/lib/highchart.js" />
+    <entry file="file://$PROJECT_DIR$/handle/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lib/data.js" />
+    <entry file="file://$PROJECT_DIR$/templates/lib/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sign-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#62#77#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="35" />
+          <folding>
+            <element signature="e#62#90#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/update-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/customer-goldbean-activity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="105" column="84" lean-forward="false" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Python27/Lib/site-packages/tornado/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27930">
+          <caret line="1508" column="0" lean-forward="false" selection-start-line="1508" selection-start-column="0" selection-end-line="1508" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/manager-update-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="163" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="97" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/table_inition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="80" column="24" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/manager-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/manager-customers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/goods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="255" column="71" lean-forward="true" selection-start-line="255" selection-start-column="71" selection-end-line="255" selection-end-column="71" />
+          <folding>
+            <element signature="e#62#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation/goods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="e#61#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/manager-users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="183" column="52" lean-forward="false" selection-start-line="183" selection-start-column="39" selection-end-line="183" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-add-goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="120" column="1" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-bind.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="120" column="2" lean-forward="false" selection-start-line="120" selection-start-column="2" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-consume-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="132" column="2" lean-forward="false" selection-start-line="132" selection-start-column="2" selection-end-line="166" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-exchange-goldbean.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="120" column="10" lean-forward="false" selection-start-line="120" selection-start-column="10" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-exchange-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="132" column="7" lean-forward="false" selection-start-line="132" selection-start-column="7" selection-end-line="166" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-give-goldbean.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="120" column="2" lean-forward="false" selection-start-line="120" selection-start-column="2" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-goldbean.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="120" column="1" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-goods-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="132" column="7" lean-forward="false" selection-start-line="132" selection-start-column="7" selection-end-line="166" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="149" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-update-goldbean.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-update-goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="120" column="2" lean-forward="false" selection-start-line="120" selection-start-column="2" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-update-rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="131" column="17" lean-forward="true" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-update-rule-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="120" column="1" lean-forward="false" selection-start-line="120" selection-start-column="1" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-user-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="139" column="55" lean-forward="true" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-user-consumpt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="161" column="12" lean-forward="false" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-user-consumption.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-account-analysis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="124" column="73" lean-forward="false" selection-start-line="124" selection-start-column="73" selection-end-line="124" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3762">
+          <caret line="198" column="16" lean-forward="false" selection-start-line="173" selection-start-column="8" selection-end-line="198" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation/merchant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6954">
+          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="372" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/merchant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9044">
+          <caret line="481" column="26" lean-forward="false" selection-start-line="481" selection-start-column="6" selection-end-line="481" selection-end-column="26" />
+          <folding>
+            <element signature="e#62#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lib/jquery.tablesorter.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1957">
+          <caret line="103" column="9" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="103" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-consume-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="270" column="5" lean-forward="false" selection-start-line="270" selection-start-column="5" selection-end-line="270" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/merchant-account-book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation/consume.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="263" column="78" lean-forward="false" selection-start-line="263" selection-start-column="78" selection-end-line="263" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="581" column="19" lean-forward="true" selection-start-line="581" selection-start-column="19" selection-end-line="581" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

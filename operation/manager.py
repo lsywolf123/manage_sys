@@ -47,7 +47,7 @@ def add_merchant(name, host_name, phone, email, address, deadline, password='123
         'level6': 1138,
         'level7': 1498,
         'level8': 2028,
-        'rule_info': '推荐贵宾在****消费，每消费1元推荐者活动1金豆，以5000进度为起点，会员可以自选档次兑换感'
+        'rule_info': '推荐贵宾在****消费，每消费1元推荐者活动1积分，以5000进度为起点，会员可以自选档次兑换感'
                      '恩回馈金。（活动期间：参加活动的会员介绍消费成功可按活动期间倍率来获取积分）'
     }
     db.rule_create(values)
@@ -61,7 +61,7 @@ def add_merchant(name, host_name, phone, email, address, deadline, password='123
     return ref
 
 
-# 添加客户
+# 添加会员
 def add_customer(start_num, end_num):
     now = datetime.datetime.now()
     for i in range(end_num - start_num + 1):
@@ -116,7 +116,7 @@ def get_merchant_list(page):
     return merchant_list[10*(page-1):10*page]
 
 
-# 新增客户列表
+# 新增会员列表
 def get_added_customer_list(page):
     temp = db.customer_added_list()
     group_time = None
@@ -138,7 +138,7 @@ def get_added_customer_list(page):
     return added_customer_list[10*(page-1):10*page], page_num
 
 
-# 新增客户详细信息
+# 新增会员详细信息
 def get_added_customer_info(created_time, page):
     temp = db.customer_added_list_by_created_time(created_time)
     added_customer_info_list = []
@@ -156,7 +156,7 @@ def get_added_customer_info(created_time, page):
     return added_customer_info_list
 
 
-# 新增客户详细信息数量
+# 新增会员详细信息数量
 def get_add_customer_info_count(created_time):
     return db.customer_added_count_by_created_time(created_time)
 
@@ -213,12 +213,12 @@ def merchant_expire_count():
     return db.merchant_expire_count()
 
 
-# 客户总数量
+# 会员总数量
 def customer_count():
     return db.customer_count()
 
 
-# 活跃客户数量
+# 活跃会员数量
 def customer_active_count():
     return db.customer_active_count()
 
@@ -238,7 +238,7 @@ def recent_merchant_count():
     return db.merchant_recent_count()
 
 
-# 最近入驻客户户信息
+# 最近入驻会员户信息
 def recent_customer_list():
     temp = db.customer_recent_list()
     customer_list = []
@@ -250,12 +250,12 @@ def recent_customer_list():
     return customer_list
 
 
-# 最近入驻客户数量
+# 最近入驻会员数量
 def recent_customer_count():
     return db.customer_recent_count()
 
 
-# 客户列表
+# 会员列表
 def customer_list(page):
     count = db.customer_count()
     page_num = count/10 + 1 if count % 10 else count/10
@@ -276,7 +276,7 @@ def customer_list(page):
     return c_list[10*(page-1):10*page]
 
 
-# 被查询客户数量
+# 被查询会员数量
 def search_customer_count(type, content):
     if type == '0':
         return db.search_all_customer_count_by_serial_num(content)
@@ -294,7 +294,7 @@ def search_customer_count(type, content):
 
 
 
-# 被查询客户列表
+# 被查询会员列表
 def get_search_customer_list(page, type, content):
     count = search_customer_count(type, content)
     if type == '0':

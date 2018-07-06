@@ -259,7 +259,7 @@ def merchant_expire_count(session=None):
     return query
 
 
-# 客户表操作
+# 会员表操作
 def customer_create(values, session=None):
     if not values.has_key('created_at'):
         values['created_at'] = utc_now()
@@ -634,6 +634,20 @@ def consume_list_by_merchant_id(merchant_id, session=None):
         all()
 
 
+def consume_original_by_merchant_id(merchant_id, session=None):
+    return model_query(models.Consume, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        order_by(models.Consume.created_at.asc()).\
+        first()
+
+
+def consume_latest_by_merchant_id(merchant_id, session=None):
+    return model_query(models.Consume, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        order_by(models.Consume.created_at.desc()).\
+        first()
+
+
 def consume_list_by_consumer_name(merchant_id, consumer_name, session=None):
     return model_query(models.Consume, session=session). \
         filter_by(merchant_id=merchant_id). \
@@ -835,6 +849,131 @@ def exchange_list_by_created_at(merchant_id, min_time, max_time, session=None):
         filter_by(merchant_id=merchant_id). \
         filter(models.Exchange.created_at <= max_time). \
         filter(models.Exchange.created_at >= min_time). \
+        all()
+
+
+# 商品表操作
+def goods_create(values, session=None):
+    values['created_at'] = utc_now()
+    if not session:
+        session = get_session()
+    with session.begin(subtransactions=True):
+        goods_ref = models.Goods()
+        session.add(goods_ref)
+        goods_ref.update(values)
+    return goods_ref
+
+
+def goods_update_by_id(goods_id, values):
+    session = get_session()
+    with session.begin(subtransactions=True):
+        values['updated_at'] = utc_now()
+        convert_datetime(values, 'created_at', 'deleted_at', 'updated_at')
+        goods_ref = goods_get_by_id(goods_id, session=session)
+        for (key, value) in values.iteritems():
+            goods_ref[key] = value
+        goods_ref.save(session=session)
+        return goods_ref
+
+
+def goods_delete_by_id(goods_id):
+    session = get_session()
+    with session.begin(subtransactions=True):
+        values = {
+            'deleted': 1,
+            'deleted_at': utc_now()
+        }
+        convert_datetime(values, 'created_at', 'deleted_at', 'updated_at')
+        goods_ref = goods_get_by_id(goods_id, session=session)
+        for (key, value) in values.iteritems():
+            goods_ref[key] = value
+        goods_ref.save(session=session)
+        return goods_ref
+
+
+def goods_get_by_id(goods_id, session=None):
+    return model_query(models.Goods, session=session).\
+            filter_by(id=goods_id).\
+            first()
+
+
+def goods_get_by_serial_num(merchant_id, serial_num, session=None):
+    return model_query(models.Goods, session=session).\
+            filter_by(merchant_id=merchant_id). \
+            filter_by(serial_num=serial_num). \
+            first()
+
+
+def goods_if_exist_in_db(merchant_id, serial_num, session=None):
+    if model_query(models.Goods, session=session).\
+            filter_by(merchant_id=merchant_id). \
+            filter_by(serial_num=serial_num). \
+            first():
+        return True
+    return False
+
+
+def goods_count(merchant_id, session=None):
+    query = model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        count()
+    return query
+
+
+def search_goods_count_by_serial_num(merchant_id, serial_num, session=None):
+    query = model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter_by(serial_num=serial_num). \
+        count()
+    return query
+
+
+def search_goods_count_by_name(merchant_id, name, session=None):
+    query = model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter_by(name=name). \
+        count()
+    return query
+
+
+def search_goods_count_by_stock_range(merchant_id, min_stock, max_stock, session=None):
+    query = model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter(models.Goods.stock >= min_stock). \
+        filter(models.Goods.stock < max_stock). \
+        count()
+    return query
+
+
+def goods_list_by_serial_num_asc(merchant_id, serial_num, session=None):
+    return model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter_by(serial_num=serial_num). \
+        order_by(models.Goods.stock.asc()).\
+        all()
+
+
+def goods_list_by_name_asc(merchant_id, name, session=None):
+    return model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter_by(name=name). \
+        order_by(models.Goods.stock.asc()).\
+        all()
+
+
+def goods_list_by_stock_asc(merchant_id, min_stock, max_stock, session=None):
+    return model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter(models.Goods.stock >= min_stock). \
+        filter(models.Goods.stock < max_stock). \
+        order_by(models.Goods.stock.asc()).\
+        all()
+
+
+def goods_list_asc(merchant_id, session=None):
+    return model_query(models.Goods, session=session). \
+        filter_by(merchant_id=merchant_id). \
+        order_by(models.Goods.stock.asc()).\
         all()
 
 

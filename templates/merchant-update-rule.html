@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>金豆商家管理后台</title>
+    <title>商家管理后台</title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -97,14 +97,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="" href="/index"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> 金豆商家管理系统</span></a>
+        <a class="" href="/index"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> 商家管理系统</span></a>
     </div>
     <div class="navbar-collapse collapse" style="height: 1px;">
         <ul id="main-menu" class="nav navbar-nav navbar-right">
             <li class="dropdown hidden-xs">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span class="glyphicon glyphicon-user padding-right-small"
-                          style="position:relative;top: 3px;"></span> {{username}}
+                          style="position:relative;top: 3px;"></span> {{ username }}
                     <i class="fa fa-caret-down"></i>
                 </a>
 
@@ -120,28 +120,35 @@
 
 <div class="sidebar-nav">
     <ul>
-        <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
-                class="fa fa-fw fa-dashboard"></i> 客户管理<i class="fa fa-collapse"></i></a></li>
+        <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i
+                class="fa fa-book"></i> 基础管理<i class="fa fa-collapse"></i></a></li>
         <li>
-            <ul class="dashboard-menu nav nav-list collapse in">
-                <li><a href="/index"><span class="fa fa-caret-right"></span> 总览</a></li>
-                <li><a href="/merchant-bind-customer"><span class="fa fa-caret-right"></span> 绑定客户</a></li>
-                <li><a href="/merchant-customer-consumpt"><span class="fa fa-caret-right"></span> 客户消费</a></li>
-                <li><a href="/merchant-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 客户列表</a>
-                </li>
-                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a>
+            <ul class="premium-menu nav nav-list collapse in">
+                <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 产品管理</a></li>
+                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a></li>
+                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 消费明细</a></li>
+                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 财务报表</a></li>
+                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 分析报表</a></li>
+            </ul>
+        </li>
+        <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
+                class="fa fa-fw fa-dashboard"></i> 会员管理<i class="fa fa-collapse"></i></a></li>
+        <li>
+            <ul class="dashboard-menu nav nav-list collapse">
+                <li><a href="/index"><span class="fa fa-caret-right"></span> 会员总览</a></li>
+                <li><a href="/merchant-bind-customer"><span class="fa fa-caret-right"></span> 绑定会员</a></li>
+                <li><a href="/merchant-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 会员列表</a>
                 </li>
             </ul>
         </li>
         <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i
-                class="fa fa-fw fa-fighter-jet"></i> 金豆运营管理<i class="fa fa-collapse"></i></a></li>
+                class="fa fa-fw fa-fighter-jet"></i> 积分运营管理<i class="fa fa-collapse"></i></a></li>
         <li>
             <ul class="premium-menu nav nav-list collapse">
                 <li><a href="/merchant-rule"><span class="fa fa-caret-right"></span> 兑换规则</a></li>
-                <li><a href="/merchant-goldbean"><span class="fa fa-caret-right"></span> 金豆活动</a></li>
-                <li><a href="/merchant-exchange-goldbean"><span class="fa fa-caret-right"></span> 兑换金豆</a></li>
-                <li><a href="/merchant-exchange-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 兑换列表</a>
-                </li>
+                <li><a href="/merchant-goldbean"><span class="fa fa-caret-right"></span> 积分活动</a></li>
+                <li><a href="/merchant-exchange-goldbean"><span class="fa fa-caret-right"></span> 兑换积分</a></li>
+                <li><a href="/merchant-exchange-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 兑换列表</a></li>
             </ul>
         </li>
     </ul>
@@ -166,39 +173,40 @@
                     <div class="tab-pane active in" id="home">
                         <form action="/merchant-update-rule" id="tab" method="post">
                             <div class="form-group col-sm-6">
-                                <label>5000金豆</label>
+                                <label>5000积分</label>
                                 <input name="level1" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>10000金豆</label>
+                                <label>10000积分</label>
                                 <input name="level2" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>15000金豆</label>
+                                <label>15000积分</label>
                                 <input name="level3" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>20000金豆</label>
+                                <label>20000积分</label>
                                 <input name="level4" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>25000金豆</label>
+                                <label>25000积分</label>
                                 <input name="level5" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>30000金豆</label>
+                                <label>30000积分</label>
                                 <input name="level6" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>35000金豆</label>
+                                <label>35000积分</label>
                                 <input name="level7" type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label>40000金豆</label>
+                                <label>40000积分</label>
                                 <input name="level8" type="text" class="form-control">
                             </div>
                             <div class="row">
-                                <font size="5">{% if message %}<span style="float:right;color:#F30606">{{message}}</span>{% end %}</font>
+                                <font size="5">{% if message %}<span
+                                        style="float:right;color:#F30606">{{ message }}</span>{% end %}</font>
                             </div>
                             <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> 保存</button>
                         </form>

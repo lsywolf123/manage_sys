@@ -8,22 +8,22 @@ import random
 from db import api as db
 
 
-# 客户信息
+# 会员信息
 def customer_info(customer_id):
     return dict(db.customer_get_by_id(customer_id))
 
 
-# 根据user_id查询客户
+# 根据user_id查询会员
 def get_customer_by_user_id(user_id):
     return dict(db.customer_get_by_user_id(user_id))
 
 
-# 金豆明细条数
+# 积分明细条数
 def customer_gb_datail_count(customer_id):
     return db.consume_count_by_customer_id(customer_id) + db.exchange_count_by_customer_id(customer_id)
 
 
-# 金豆明细列表
+# 积分明细列表
 def get_customer_gb_datail_list(customer_id, page):
     gb_datail_count = customer_gb_datail_count(customer_id)
     page_num = gb_datail_count/10 + 1 if gb_datail_count % 10 else gb_datail_count/10
@@ -37,7 +37,7 @@ def get_customer_gb_datail_list(customer_id, page):
         gb_datail_dict['num'] = i + 1
         if len(consume_list) == 0:
             gb_datail_dict['object'] =  exchange_list[0]['customer_name']
-            gb_datail_dict['type'] = '消费金豆'
+            gb_datail_dict['type'] = '消费积分'
             gb_datail_dict['result'] = -exchange_list[0]['exchange_goldbean']
             gb_datail_dict['money'] = exchange_list[0]['exchange_money']
             gb_datail_dict['created_at'] = exchange_list[0]['created_at']
@@ -46,7 +46,7 @@ def get_customer_gb_datail_list(customer_id, page):
             continue
         if len(exchange_list) == 0:
             gb_datail_dict['object'] = consume_list[0]['consumer_name']
-            gb_datail_dict['type'] = '获取金豆'
+            gb_datail_dict['type'] = '获取积分'
             gb_datail_dict['result'] = int(consume_list[0]['consume_money'] * consume_list[0]['multiple'])
             gb_datail_dict['money'] = 0
             gb_datail_dict['created_at'] = consume_list[0]['created_at']
@@ -55,7 +55,7 @@ def get_customer_gb_datail_list(customer_id, page):
             continue
         if consume_list[0]['created_at'] >= exchange_list[0]['created_at']:
             gb_datail_dict['object'] = consume_list[0]['consumer_name']
-            gb_datail_dict['type'] = '获取金豆'
+            gb_datail_dict['type'] = '获取积分'
             gb_datail_dict['result'] = int(consume_list[0]['consume_money'] * consume_list[0]['multiple'])
             gb_datail_dict['money'] = 0
             gb_datail_dict['created_at'] = consume_list[0]['created_at']
@@ -64,7 +64,7 @@ def get_customer_gb_datail_list(customer_id, page):
             continue
         else:
             gb_datail_dict['object'] =  exchange_list[0]['customer_name']
-            gb_datail_dict['type'] = '消费金豆'
+            gb_datail_dict['type'] = '消费积分'
             gb_datail_dict['result'] = -exchange_list[0]['exchange_goldbean']
             gb_datail_dict['money'] = exchange_list[0]['exchange_money']
             gb_datail_dict['created_at'] = exchange_list[0]['created_at']
@@ -82,7 +82,7 @@ def gb_activity_by_customer_id(customer_id):
     return activity_dict
 
 
-# 根据customer_id更新客户基本信息
+# 根据customer_id更新会员基本信息
 def customer_update_by_customer_id(customer_id, phone, email, we_chat):
     values = {
         'phone': phone,

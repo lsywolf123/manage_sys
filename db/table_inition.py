@@ -6,7 +6,7 @@ from sqlalchemy import MetaData
 from sqlalchemy import Table, Column, Integer, String, Boolean, DateTime, Float
 
 
-engine = create_engine('mysql://root:123456@120.77.32.224:3306/jindou_system?charset=utf8', echo=False)
+engine = create_engine('mysql://root:123456@127.0.0.1:3306/jindou_system?charset=utf8', echo=False)
 metadata = MetaData(engine)
 table_list = []
 
@@ -106,8 +106,10 @@ table_list.append(activity_table)
 consume_table = Table('consume', metadata,
                       Column('id', String(128), primary_key=True),
                       Column('merchant_id', String(128), nullable=False),
-                      Column('consumer_name', String(128), nullable=False),
+                      Column('goods_id', String(128), nullable=False),
                       Column('customer_id', String(128), nullable=True),
+                      Column('consumer_name', String(128), nullable=False),
+                      Column('consumer_phone', String(128), nullable=False),
                       Column('consume_money', Integer, nullable=False),
                       Column('multiple', Float, nullable=False),
                       Column('consume_content', String(255), nullable=True),
@@ -132,6 +134,21 @@ exchange_table = Table('exchange', metadata,
                        Column('deleted', Boolean(create_constraint=True, name=None)))
 table_list.append(exchange_table)
 
+
+goods_table = Table('goods', metadata,
+                       Column('id', String(128), primary_key=True),
+                       Column('merchant_id',String(128), nullable=True),
+                       Column('serial_num',String(255), nullable=False),
+                       Column('name', String(255), nullable=True),
+                       Column('price', Integer, nullable=True),
+                       Column('offer', Integer, nullable=True),
+                       Column('stock', Integer, nullable=True),
+                       Column('sales_amount', Integer, nullable=True),
+                       Column('created_at', DateTime(timezone=False)),
+                       Column('updated_at', DateTime(timezone=False)),
+                       Column('deleted_at', DateTime(timezone=False)),
+                       Column('deleted', Boolean(create_constraint=True, name=None)))
+table_list.append(goods_table)
 
 #  删除所有表
 # for table in table_list:

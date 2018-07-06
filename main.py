@@ -4,6 +4,7 @@
 import os
 import tornado.ioloop
 import tornado.web
+from handle import test
 from handle import login
 from handle import index
 from handle import manager
@@ -11,6 +12,7 @@ from handle import logout
 from handle import merchant
 from handle import customer
 from handle import update_password
+from handle import goods
 
 
 ROOT = os.path.dirname(__file__)
@@ -26,6 +28,7 @@ settings = {
 
 application = tornado.web.Application(
     [
+        (r"/test", test.IndexHandle),
         (r"/index", index.IndexHandle),
         (r'/login', login.LoginHandle),
         (r'/logout', logout.LogoutHandle),
@@ -50,12 +53,19 @@ application = tornado.web.Application(
         (r'/merchant-update-goldbean', merchant.MerchantUpdateGoldbeanHandle),
         (r'/merchant-exchange-goldbean', merchant.MerchantExchangeGoldbeanHandle),
         (r'/merchant-consume-list', merchant.MerchantConsumeListHandle),
+        (r'/merchant-consume-info', merchant.MerchantConsumeInfoHandle),
         (r'/merchant-exchange-list', merchant.MerchantExchangeListHandle),
         (r'/merchant-give-goldbean', merchant.MerchantGiveGbHandle),
         (r'/customer-goldbean-info', customer.CustomerGbInfoHandle),
         (r'/customer-goldbean-activity', customer.CustomerGbActivityHandle),
         (r'/customer-info', customer.CustomerInfoHandle),
         (r'/customer-info-update', customer.CustomerInfoUpdateHandle),
+        (r'/merchant-add-goods', goods.AddGoodsHandle),
+        (r'/merchant-goods-list', goods.GoodsListHandle),
+        (r'/merchant-update-goods', goods.UpdategoodsHandle),
+        (r'/merchant-delete-goods', goods.DeleteGoodsHandle),
+        (r'/merchant-account-book', merchant.MerchantAccountBookHandle),
+        (r'/merchant-account-analysis', merchant.MerchantAccountAnalysisHandle)
     ], **settings)
 
 

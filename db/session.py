@@ -73,7 +73,7 @@ def is_db_connection_error(args):
 def get_engine():
     """Return a SQLAlchemy engine."""
     global _ENGINE
-    sql_connection = 'mysql://root:123456@120.77.32.224:3306/jindou_system?charset=utf8'
+    sql_connection = 'mysql://root:123456@127.0.0.1:3306/jindou_system?charset=utf8'
     if _ENGINE is None:
         connection_dict = sqlalchemy.engine.url.make_url(sql_connection)
 

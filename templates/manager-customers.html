@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>金豆管理后台</title>
+    <title>积分管理后台</title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -103,7 +103,7 @@
             <span class="icon-bar"></span>
         </button>
         <a class="" href="/index"><span class="navbar-brand"><span
-                class="fa fa-paper-plane"></span> 金豆管理系统</span></a>
+                class="fa fa-paper-plane"></span> 积分管理系统</span></a>
     </div>
     <div class="navbar-collapse collapse" style="height: 1px;">
         <ul id="main-menu" class="nav navbar-nav navbar-right">
@@ -137,13 +137,13 @@
             </ul>
         </li>
         <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i
-                class="fa fa-fw fa-fighter-jet"></i> 客户管理<i class="fa fa-collapse"></i></a></li>
+                class="fa fa-fw fa-fighter-jet"></i> 会员管理<i class="fa fa-collapse"></i></a></li>
         <li>
             <ul class="premium-menu nav nav-list collapse">
-                <li><a href="/manager-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 客户列表</a>
+                <li><a href="/manager-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 会员列表</a>
                 </li>
-                <li><a href="/add-customer"><span class="fa fa-caret-right"></span> 新增客户</a></li>
-                <li><a href="/add-customer-list?page=1"><span class="fa fa-caret-right"></span> 新增客户查询</a></li>
+                <li><a href="/add-customer"><span class="fa fa-caret-right"></span> 新增会员</a></li>
+                <li><a href="/add-customer-list?page=1"><span class="fa fa-caret-right"></span> 新增会员查询</a></li>
             </ul>
         </li>
     </ul>
@@ -151,10 +151,10 @@
 
 <div class="content">
     <div class="header">
-        <h1 class="page-title">客户列表</h1>
+        <h1 class="page-title">会员列表</h1>
         <ul class="breadcrumb">
             <li><a href="/index">首页</a></li>
-            <li class="active">客户列表</li>
+            <li class="active">会员列表</li>
         </ul>
     </div>
     <div class="main-content">
@@ -169,15 +169,15 @@
                        style="display:none;width:10%;margin-right:10px">
                 <select name="content3" id="div3" class="form-control pull-right"
                         style="display:none;width:10%;margin-right:10px">
-                    <option value="0">5000金豆以下</option>
-                    <option value="1">5000-10000金豆</option>
-                    <option value="2">10000-15000金豆</option>
-                    <option value="3">15000-20000金豆</option>
-                    <option value="4">20000-25000金豆</option>
-                    <option value="5">25000-30000金豆</option>
-                    <option value="6">30000-35000金豆</option>
-                    <option value="7">35000-40000金豆</option>
-                    <option value="8">40000金豆以上</option>
+                    <option value="0">5000积分以下</option>
+                    <option value="1">5000-10000积分</option>
+                    <option value="2">10000-15000积分</option>
+                    <option value="3">15000-20000积分</option>
+                    <option value="4">20000-25000积分</option>
+                    <option value="5">25000-30000积分</option>
+                    <option value="6">30000-35000积分</option>
+                    <option value="7">35000-40000积分</option>
+                    <option value="8">40000积分以上</option>
                 </select>
                 <input name="content4" id="div4" type="text" class="form-control span12 pull-right"
                        style="display:none;width:10%;margin-right:10px">
@@ -186,7 +186,7 @@
                     <option value="0">编号</option>
                     <option value="1">姓名</option>
                     <option value="2">联系方式</option>
-                    <option value="3">金豆数量</option>
+                    <option value="3">积分数量</option>
                     <option value="4">所属商家</option>
                 </select>
             </form>
@@ -203,10 +203,10 @@
                 <th><a href="#">编号</a></th>
                 <th><a href="#">姓名</a></th>
                 <th><a href="#">所属商家</a></th>
-                <th><a href="#">历史金豆</a></th>
-                <th><a href="#">当前金豆</a></th>
-                <th><a href="#">历史激活金豆</a></th>
-                <th><a href="#">激活金豆</a></th>
+                <th><a href="#">历史积分</a></th>
+                <th><a href="#">当前积分</a></th>
+                <th><a href="#">历史激活积分</a></th>
+                <th><a href="#">激活积分</a></th>
                 <th><a href="#">联系方式</a></th>
                 <th><a href="#">兑换次数</a></th>
                 <th><a href="#">兑换金额</a></th>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>金豆商家管理后台</title>
+    <title>商家管理后台</title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -97,14 +97,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="" href="/index"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> 金豆商家管理系统</span></a>
+        <a class="" href="/index"><span class="navbar-brand"><span class="fa fa-paper-plane"></span> 商家管理系统</span></a>
     </div>
     <div class="navbar-collapse collapse" style="height: 1px;">
         <ul id="main-menu" class="nav navbar-nav navbar-right">
             <li class="dropdown hidden-xs">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span class="glyphicon glyphicon-user padding-right-small"
-                          style="position:relative;top: 3px;"></span> {{username}}
+                          style="position:relative;top: 3px;"></span> {{ username }}
                     <i class="fa fa-caret-down"></i>
                 </a>
 
@@ -120,28 +120,35 @@
 
 <div class="sidebar-nav">
     <ul>
-        <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
-                class="fa fa-fw fa-dashboard"></i> 客户管理<i class="fa fa-collapse"></i></a></li>
+        <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i
+                class="fa fa-book"></i> 基础管理<i class="fa fa-collapse"></i></a></li>
         <li>
-            <ul class="dashboard-menu nav nav-list collapse in">
-                <li><a href="/index"><span class="fa fa-caret-right"></span> 总览</a></li>
-                <li><a href="/merchant-bind-customer"><span class="fa fa-caret-right"></span> 绑定客户</a></li>
-                <li><a href="/merchant-customer-consumpt"><span class="fa fa-caret-right"></span> 客户消费</a></li>
-                <li><a href="/merchant-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 客户列表</a>
-                </li>
-                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a>
+            <ul class="premium-menu nav nav-list collapse in">
+                <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 产品管理</a></li>
+                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a></li>
+                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 消费明细</a></li>
+                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 财务报表</a></li>
+                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 分析报表</a></li>
+            </ul>
+        </li>
+        <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
+                class="fa fa-fw fa-dashboard"></i> 会员管理<i class="fa fa-collapse"></i></a></li>
+        <li>
+            <ul class="dashboard-menu nav nav-list collapse">
+                <li><a href="/index"><span class="fa fa-caret-right"></span> 会员总览</a></li>
+                <li><a href="/merchant-bind-customer"><span class="fa fa-caret-right"></span> 绑定会员</a></li>
+                <li><a href="/merchant-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 会员列表</a>
                 </li>
             </ul>
         </li>
         <li><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i
-                class="fa fa-fw fa-fighter-jet"></i> 金豆运营管理<i class="fa fa-collapse"></i></a></li>
+                class="fa fa-fw fa-fighter-jet"></i> 积分运营管理<i class="fa fa-collapse"></i></a></li>
         <li>
             <ul class="premium-menu nav nav-list collapse">
                 <li><a href="/merchant-rule"><span class="fa fa-caret-right"></span> 兑换规则</a></li>
-                <li><a href="/merchant-goldbean"><span class="fa fa-caret-right"></span> 金豆活动</a></li>
-                <li><a href="/merchant-exchange-goldbean"><span class="fa fa-caret-right"></span> 兑换金豆</a></li>
-                <li><a href="/merchant-exchange-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 兑换列表</a>
-                </li>
+                <li><a href="/merchant-goldbean"><span class="fa fa-caret-right"></span> 积分活动</a></li>
+                <li><a href="/merchant-exchange-goldbean"><span class="fa fa-caret-right"></span> 兑换积分</a></li>
+                <li><a href="/merchant-exchange-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 兑换列表</a></li>
             </ul>
         </li>
     </ul>
@@ -151,12 +158,13 @@
     <div class="header">
         <h1 class="page-title">用户信息</h1>
         <ul class="breadcrumb">
-            <li><a href="/index">首页</a> </li>
+            <li><a href="/index">首页</a></li>
             <li class="active">用户</li>
         </ul>
     </div>
     <div class="main-content">
-        <p><font size="3" face="Verdana"><strong>用户编号：</strong></font><font size="1" face="Verdana">{{customer_info['serial_num']}}</font>
+        <p><font size="3" face="Verdana"><strong>用户编号：</strong></font><font size="1"
+                                                                            face="Verdana">{{ customer_info['serial_num'] }}</font>
         </p>
         <div class="panel panel-default" style="margin-top:30px">
             <div class="panel-heading">个人资料</div>
@@ -164,92 +172,92 @@
                 <ul class="list-unstyled list-info">
                     <li>
                         <span class="text-info fa fa-user fa-fw"></span>
-                        姓名：{{customer_info['name']}}
+                        姓名：{{ customer_info['name'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-envelope fa-fw"></span>
-                        邮箱：{{customer_info['email']}}
+                        邮箱：{{ customer_info['email'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-phone fa-fw"></span>
-                        联系电话：{{customer_info['phone']}}
+                        联系电话：{{ customer_info['phone'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-fw fa-legal fa-fw"></span>
-                        身份证：{{customer_info['identify_id']}}
+                        身份证：{{ customer_info['identify_id'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-comment fa-fw"></span>
-                        微信：{{customer_info['we_chat']}}
+                        微信：{{ customer_info['we_chat'] }}
                     </li>
                 </ul>
             </div>
         </div>
         <div class="panel panel-default" style="margin-top:30px">
-            <div class="panel-heading">金豆明细</div>
+            <div class="panel-heading">积分明细</div>
             <div class="panel-body">
                 <ul class="list-unstyled list-info">
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        历史总金豆：{{customer_info['total_gb']}}
+                        历史总积分：{{ customer_info['total_gb'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        当前总金豆：{{customer_info['gb']}}
+                        当前总积分：{{ customer_info['gb'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        赠送金豆：{{customer_info['given_gb']}}
+                        赠送积分：{{ customer_info['given_gb'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        推荐他人消费所获金豆：{{customer_info['consume_gb']}}
+                        推荐他人消费所获积分：{{ customer_info['consume_gb'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        金豆兑换次数：{{customer_info['gb_exchange_count']}}
+                        积分兑换次数：{{ customer_info['gb_exchange_count'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        兑换总金额：{{customer_info['gain_money']}}
+                        兑换总金额：{{ customer_info['gain_money'] }}
                     </li>
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
                         兑换资格：
                         {% if customer_info['qualification_gb'] > 500 %} 有
-                        {% else %} 无（离兑换资格还差{{500 - customer_info['qualification_gb']}}推荐基金）
+                        {% else %} 无（离兑换资格还差{{ 500 - customer_info['qualification_gb'] }}推荐基金）
                         {% end %}
                     </li>
                 </ul>
             </div>
         </div>
         <div class="panel panel-default" style="margin-top:30px">
-            <div class="panel-heading">金豆获取</div>
+            <div class="panel-heading">积分获取</div>
             <div class="panel-body">
                 <ul class="list-unstyled list-info">
                     <li style="margin-top:10px">
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
-                        金豆获取：
+                        积分获取：
                         <table class="table">
                             <thead>
                             <tr>
                                 <th>#</th>
                                 <th>消费人</th>
                                 <th>消费金额</th>
-                                <th>获得金豆</th>
+                                <th>获得积分</th>
                                 <th>消费日期</th>
                             </tr>
                             </thead>
                             <tbody>
-                                {% for consume in consume_list %}
-                                <tr>
-                                    <th>{{consume['num']}}</th>
-                                    <td>{{consume['consumer_name']}}</td>
-                                    <td>{{consume['consume_money']}}元</td>
-                                    <td>{{int(consume['consume_money'] * consume['multiple'])}}</td>
-                                    <td>{{consume['created_at']}}</td>
-                                </tr>
-                                {% end %}
+                            {% for consume in consume_list %}
+                            <tr>
+                                <th>{{ consume['num'] }}</th>
+                                <td>{{ consume['consumer_name'] }}</td>
+                                <td>{{ consume['consume_money'] }}元</td>
+                                <td>{{ int(consume['consume_money'] * consume['multiple']) }}</td>
+                                <td>{{ consume['created_at'] }}</td>
+                            </tr>
+                            {% end %}
                             </tbody>
                         </table>
                     </li>

@@ -50,14 +50,34 @@ class SerialNumIsNotExist(ScoreException):
 
 class CustomerInfoNotMatch(ScoreException):
     code = 10007
-    message = '客户信息不匹配!'
+    message = '会员信息不匹配!'
 
 
 class CustomerGoldbeanNotEnough(ScoreException):
     code = 10007
-    message = '客户金豆不足兑换该档次!'
+    message = '会员积分不足兑换该档次!'
 
 
 class CustomerHasNoQualification(ScoreException):
     code = 10008
-    message = '客户的推荐基金没达到5000,没有兑换资格'
+    message = '会员的推荐基金没达到5000,没有兑换资格'
+
+
+class GoodsIsExistException(ScoreException):
+    code = 10009
+    message = '商品已存在!'
+
+
+class GoodsIsNotExistException(ScoreException):
+    code = 10010
+    message = '商品不存在!'
+
+
+class GoodsIsNotEnoughException(ScoreException):
+    code = 10011
+    message = '商品库存不足,无法创建消费订单!'
+
+
+class SerialNumIsNotBind(ScoreException):
+    code = 10012
+    message = '无法查到该推荐人编号所对应的推荐人!'

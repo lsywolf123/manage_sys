@@ -27,17 +27,17 @@ def check_password(merchant_id, password):
         raise exception.PasswordIsWrongException()
 
 
-# 总客户数
+# 总会员数
 def customer_count_by_id(merchant_id):
     return db.customer_count_by_merchant_id(merchant_id)
 
 
-# 活跃客户数量
+# 活跃会员数量
 def customer_active_count_by_id(merchant_id):
     return db.customer_active_count_by_merchant_id(merchant_id)
 
 
-# 最近入驻客户户信息
+# 最近入驻会员户信息
 def recent_customer_list(merchant_id):
     temp = db.customer_recent_list_by_merchant_id(merchant_id)
     customer_list = []
@@ -47,12 +47,12 @@ def recent_customer_list(merchant_id):
     return customer_list
 
 
-# 最近入驻客户数量
+# 最近入驻会员数量
 def recent_customer_count(merchant_id):
     return db.customer_recent_count_by_merchant_id(merchant_id)
 
 
-# 最近兑换客户户信息
+# 最近兑换会员户信息
 def recent_exchange_customer_list(merchant_id):
     temp = db.exchange_get_by_merchant_id(merchant_id)
     exchange_list = []
@@ -65,15 +65,15 @@ def recent_exchange_customer_list(merchant_id):
     return exchange_list
 
 
-# 最近兑换客户数量
+# 最近兑换会员数量
 def recent_exchange_customer_count(merchant_id):
     return db.exchange_recent_count_by_merchant_id(merchant_id)
 
 
-# 绑定客户
+# 绑定会员
 def bind_customer(merchant_id, serial_num, password, name, identify_id, phone, email, we_chat):
     if not db.user_username_if_exist_in_db(serial_num):
-        raise exception.UserIsNotExistException()
+        raise exception.SerialNumIsNotExist()
     user = db.user_get_by_username(serial_num)
     if password != user['password']:
         raise exception.PasswordIsWrongException()
@@ -96,7 +96,7 @@ def bind_customer(merchant_id, serial_num, password, name, identify_id, phone, e
     return db.customer_bind_by_serial_num(serial_num, values)
 
 
-# 客户列表
+# 会员列表
 def customer_list_by_merchant_id(merchant_id, page):
     customer_count = db.customer_count_by_merchant_id(merchant_id)
     page_num = customer_count/10 + 1 if customer_count % 10 else customer_count/10
@@ -113,7 +113,7 @@ def customer_list_by_merchant_id(merchant_id, page):
     return customer_list[10*(page-1):10*page]
 
 
-# 被查询客户数量
+# 被查询会员数量
 def search_customer_count(merchant_id, type, content):
     if type == '0':
         return db.search_customer_count_by_serial_num(merchant_id, content)
@@ -127,7 +127,7 @@ def search_customer_count(merchant_id, type, content):
         return db.search_customer_count_by_gb_range(merchant_id, min_gb, max_gb)
 
 
-# 被查询客户列表
+# 被查询会员列表
 def get_search_customer_list(merchant_id, page, type, content):
     customer_count = search_customer_count(merchant_id, type, content)
     if type == '0':
@@ -197,7 +197,7 @@ def update_merchant_activity(merchant_id, multiple, start_time, end_time):
     return db.activity_update_by_merchant_id(merchant_id, values)
 
 
-# 兑换金豆
+# 兑换积分
 def exchange_goldbean(merchant_id, serial_num, name, identify_id, ratio):
     customer = db.customer_get_by_serial_num(serial_num)
     if not customer:
@@ -232,7 +232,7 @@ def exchange_goldbean(merchant_id, serial_num, name, identify_id, ratio):
     return db.exchange_create(values)
 
 
-# 金豆兑换排行榜
+# 积分兑换排行榜
 def exchange_ranking_list(merchant_id):
     temp = db.customer_get_by_merchant_id_order_by_exchange(merchant_id)
     customer_list = []
@@ -242,7 +242,7 @@ def exchange_ranking_list(merchant_id):
     return customer_list[0:10]
 
 
-# 总金豆排行榜
+# 总积分排行榜
 def goldbean_ranking_list(merchant_id):
     temp = db.customer_get_by_merchant_id_order_by_goldbean(merchant_id)
     customer_list = []
@@ -315,11 +315,14 @@ def get_search_exchange_list(merchant_id, page, type, content):
     return exchange_list[10*(page-1):10*page]
 
 
+# 会员赠送积分
 def give_goldbean(customer_id, gb_num):
     customer = db.customer_get_by_id(customer_id)
     values = {
         'merchant_id': customer['merchant_id'],
         'consumer_name': '至尊会员-'.decode('utf-8') + customer['name'],
+        'goods_id': 0,
+        'consumer_phone': '无',
         'customer_id': customer_id,
         'consume_money': int(gb_num),
         'multiple': 1,
@@ -334,6 +337,61 @@ def give_goldbean(customer_id, gb_num):
     return db.customer_update_by_id(customer_id, values)
 
 
+def original_consume_year(merchant_id):
+    return str(db.consume_original_by_merchant_id(merchant_id)['created_at']).split('-')[0]
+
+
+def latest_consume_year(merchant_id):
+    return str(db.consume_latest_by_merchant_id(merchant_id)['created_at']).split('-')[0]
+
+
+# 财务报表年份列表
+def merchant_account_book_year_list(merchant_id):
+    year_list = []
+    year = int(latest_consume_year(merchant_id))
+    while year >= int(original_consume_year(merchant_id)):
+        year_list.append(year)
+        year -= 1
+    return year_list
+
+
+# 财务报表
+def merchant_account_book(merchant_id, type, year):
+    goods_name_list = []
+    goods_list = db.goods_list_asc(merchant_id)
+    month_list = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+    data_list = []
+    for goods in goods_list:
+        data_dict = {
+            'goods_name': goods['name'],
+            'money': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+        data_list.append(data_dict)
+        goods_name_list.append(goods['name'])
+    min_time = str(year) + '-01-01 00:00:00'
+    max_time = str(year) + '-12-31 23:59:59'
+    consume_list = db.consume_list_by_created_at(merchant_id, min_time, max_time)
+    for consume in consume_list:
+        if consume['goods_id'] == '0':
+            continue
+        goods = db.goods_get_by_id(consume['goods_id'])
+        count = -1
+        for temp in goods_name_list:
+            count += 1
+            if goods['name'] == temp:
+                break
+        if type == '0':
+            data_list[count]['money'][int(str(consume['created_at']).split('-')[1])-1] += consume['consume_money']
+        elif type == '1':
+            data_list[count]['money'][int(str(consume['created_at']).split('-')[1]) - 1] += (consume['consume_money'] - goods['price'])
+    value_dict = {
+        'goods_name_list': goods_name_list,
+        'month_list': month_list,
+        'data_list': data_list,
+    }
+    return value_dict
+
+
 
 if __name__ == '__main__':
-    print customer_active_count_by_id('b8e889de-67ad-11e7-a1d0-3497f688d3c6')
+    print merchant_account_book('0cb0a34f-6d89-11e8-8d21-3497f688d3c6', '0', '2018')['goods_name_list']
