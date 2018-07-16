@@ -594,10 +594,13 @@ class MerchantConsumeInfoHandle(BaseHandler):
         merchant_id = self.get_secure_cookie('merchant_id')
         year_list = merchant.merchant_account_book_year_list(merchant_id)
         month = datetime_toString(datetime.datetime.now()).split('-')[1]
-        data_list = consume.merchant_account_book(merchant_id, year_list[0], month)
+        if year_list:
+            data_list = consume.merchant_account_book(merchant_id, year_list[0], month)
+        else:
+            data_list = []
         info = {
             'month': month,
-            'year': year_list[0],
+            'year': year_list[0] if year_list else datetime_toString(datetime.datetime.now()).split('-')[0],
             'username': username,
             'year_list': year_list,
             'data_list': data_list,

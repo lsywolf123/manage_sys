@@ -8,6 +8,11 @@ import random
 from db import api as db
 
 
+# 把datetime转成字符串
+def datetime_toString(dt):
+    return dt.strftime("%Y-%m-%d")
+
+
 # 根据user_id查询商户
 def get_merchant_by_user_id(user_id):
     return dict(db.merchant_get_by_user_id(user_id))
@@ -338,21 +343,25 @@ def give_goldbean(customer_id, gb_num):
 
 
 def original_consume_year(merchant_id):
-    return str(db.consume_original_by_merchant_id(merchant_id)['created_at']).split('-')[0]
+    if db.consume_original_by_merchant_id(merchant_id):
+        return str(db.consume_original_by_merchant_id(merchant_id)['created_at']).split('-')[0]
 
 
 def latest_consume_year(merchant_id):
-    return str(db.consume_latest_by_merchant_id(merchant_id)['created_at']).split('-')[0]
+    if db.consume_latest_by_merchant_id(merchant_id):
+        return str(db.consume_latest_by_merchant_id(merchant_id)['created_at']).split('-')[0]
 
 
 # 财务报表年份列表
 def merchant_account_book_year_list(merchant_id):
     year_list = []
-    year = int(latest_consume_year(merchant_id))
-    while year >= int(original_consume_year(merchant_id)):
-        year_list.append(year)
-        year -= 1
-    return year_list
+    if latest_consume_year(merchant_id) and latest_consume_year(merchant_id):
+        year = int(latest_consume_year(merchant_id))
+        while year >= int(original_consume_year(merchant_id)):
+            year_list.append(year)
+            year -= 1
+        return year_list
+    return [datetime_toString(datetime.datetime.now()).split('-')[0]]
 
 
 # 财务报表

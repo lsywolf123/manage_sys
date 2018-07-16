@@ -229,6 +229,7 @@
                     </tr>
                     </tbody>
                 {% end %}
+                {% if len(data_list) > 0 %}
                     <tbody>
                     <tr>
                         <td>{{ data_list[-1]['goods_serial_num'] }}</td>
@@ -238,6 +239,7 @@
                         <td>{{ data_list[-1]['profit'] }}</td>
                     </tr>
                     </tbody>
+                {% end %}
             </table>
             <footer style="padding-top:17%">
                 <hr>
