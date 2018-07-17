@@ -66,9 +66,9 @@ def consume_list_by_merchant_id(merchant_id, page):
     temp = db.consume_list_by_merchant_id(merchant_id)
     consume_list = []
     count = 1
-    for consume in temp:
+    for consume in temp[10*(page-1):10*page]:
         consume_dict = dict(consume)
-        consume_dict['num'] = count
+        consume_dict['num'] = count + 10*(page-1)
         goods = db.goods_get_by_id(consume['goods_id'])
         if not goods:
             continue
@@ -82,7 +82,7 @@ def consume_list_by_merchant_id(merchant_id, page):
         consume_dict['consume_content'] = consume_dict['consume_content'] if consume_dict['consume_content'] else '无'
         consume_list.append(consume_dict)
         count += 1
-    return consume_list[10*(page-1):10*page]
+    return consume_list
 
 
 # 被查询消费数量
@@ -119,9 +119,9 @@ def get_search_consume_list(merchant_id, page, type, content):
         return []
     count = 1
     consume_list = []
-    for consume in temp:
+    for consume in temp[10*(page-1):10*page]:
         consume_dict = dict(consume)
-        consume_dict['num'] = count
+        consume_dict['num'] = count + 10*(page-1)
         goods = db.goods_get_by_id(consume['goods_id'])
         if not goods:
             continue
@@ -134,7 +134,7 @@ def get_search_consume_list(merchant_id, page, type, content):
         consume_dict['consume_content'] = consume_dict['consume_content'] if consume_dict['consume_content'] else '无'
         consume_list.append(consume_dict)
         count += 1
-    return consume_list[10*(page-1):10*page]
+    return consume_list
 
 
 # 根据会员查找消费记录

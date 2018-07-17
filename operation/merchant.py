@@ -393,6 +393,13 @@ def merchant_account_book(merchant_id, type, year):
             data_list[count]['money'][int(str(consume['created_at']).split('-')[1])-1] += consume['consume_money']
         elif type == '1':
             data_list[count]['money'][int(str(consume['created_at']).split('-')[1]) - 1] += (consume['consume_money'] - goods['price'])
+    # for data in data_list:
+    #     for mon in range(12):
+    #         total_month_consume_monny = db.consume_money_by_created_at(merchant_id, str(year) + '-%s-01 00:00:00'%(mon+1), str(year) + '-%s-31 23:59:59'%(mon+1))
+    #         if total_month_consume_monny:
+    #             data['money'][mon] = str(data['money'][mon]) + '/' + str(round(data['money'][mon]/total_month_consume_monny*100, 2)) + '%'
+    #         else:
+    #             continue
     value_dict = {
         'goods_name_list': goods_name_list,
         'month_list': month_list,
@@ -403,4 +410,4 @@ def merchant_account_book(merchant_id, type, year):
 
 
 if __name__ == '__main__':
-    print merchant_account_book('0cb0a34f-6d89-11e8-8d21-3497f688d3c6', '0', '2018')['goods_name_list']
+    print merchant_account_book('0cb0a34f-6d89-11e8-8d21-3497f688d3c6', '0', '2018')

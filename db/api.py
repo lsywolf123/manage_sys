@@ -9,6 +9,7 @@ import datetime
 from datetime import timedelta
 from db.session import get_session
 from db import models
+from sqlalchemy.sql import func
 
 LOG = logging.getLogger(__name__)
 
@@ -692,6 +693,14 @@ def consume_list_by_created_at(merchant_id, min_time, max_time, session=None):
         filter(models.Consume.created_at <= max_time). \
         filter(models.Consume.created_at >= min_time). \
         all()
+
+
+def consume_money_by_created_at(merchant_id, min_time, max_time, session=None):
+    return model_query(func.sum(models.Consume.consume_money), session=session). \
+        filter_by(merchant_id=merchant_id). \
+        filter(models.Consume.created_at <= max_time). \
+        filter(models.Consume.created_at >= min_time).\
+        first()[0]
 
 
 # 规则表操作
