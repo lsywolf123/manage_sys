@@ -125,10 +125,10 @@
         <li>
             <ul class="premium-menu nav nav-list collapse in">
                 <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 产品管理</a></li>
-                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a></li>
-                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 消费明细</a></li>
-                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 财务报表</a></li>
-                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 分析报表</a></li>
+                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 销售明细</a></li>
+                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 月销统计</a></li>
+                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 销售总表</a></li>
+                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 销售对比</a></li>
             </ul>
         </li>
         <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
@@ -156,15 +156,15 @@
 
 <div class="content">
     <div class="header">
-        <h1 class="page-title">更新商品</h1>
+        <h1 class="page-title">更新产品</h1>
         <ul class="breadcrumb">
             <li><a href="/index">首页</a></li>
-            <li class="active">更新商品</li>
+            <li class="active">更新产品</li>
         </ul>
     </div>
     <div class="main-content">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">更新商品</a></li>
+            <li class="active"><a href="#home" data-toggle="tab">更新产品</a></li>
         </ul>
         <div class="row">
             <div class="col-md-4">
@@ -173,30 +173,30 @@
                     <div class="tab-pane active in" id="home">
                         <form action="/merchant-update-goods" id="tab" method="post">
                             <div class="form-group" style="display:none;">
-                                <label>商品ID</label>
+                                <label>产品ID</label>
                                 <select name="id" class="form-control">
                                     <option value={{ id }}>{{ id }}</option>
                                 </select>
                                 <input type="hidden" name="username" type="text" value={{ username }}>
                             </div>
                             <div class="form-group">
-                                <label>商品编号</label>
+                                <label>产品编号</label>
                                 <input name="serial_num" type="text" value={{ serial_num }} class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>商品名字</label>
+                                <label>产品名字</label>
                                 <input name="name" type="text" value={{ name }} class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>商品价格</label>
+                                <label>产品价格</label>
                                 <input name="price" type="text" value={{ price }} class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>商品报价</label>
+                                <label>产品报价</label>
                                 <input name="offer" type="text" value={{ offer }} class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>商品库存</label>
+                                <label>产品库存</label>
                                 <input name="stock" type="text" value={{ stock }} class="form-control">
                             </div>
                             <div class="row">

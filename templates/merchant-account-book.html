@@ -122,10 +122,10 @@
         <li>
             <ul class="premium-menu nav nav-list collapse in">
                 <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 产品管理</a></li>
-                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a></li>
-                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 消费明细</a></li>
-                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 财务报表</a></li>
-                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 分析报表</a></li>
+                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 销售明细</a></li>
+                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 月销统计</a></li>
+                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 销售总表</a></li>
+                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 销售对比</a></li>
             </ul>
         </li>
         <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
@@ -197,13 +197,13 @@
                         }
                     },
                     formatter: function (params) {
-                        var res='<div><p>时间：'+params[0].name+'</p></div>'
                         var total = 0.1
                         for(var i=0;i<params.length;i++){
                             total += parseInt(params[i].data)
                         }
+                        var res='<div><p>时间：'+params[0].name+'   总计：'+total.toFixed(0)+'元</p></div>'
                         for(var i=0;i<params.length;i++){
-                        res+='<p><div style="width:30%;height:10px;background-color:'+params[i].color+';"></div>'+params[i].seriesName+': '+params[i].data+'元 / '+(params[i].data/total*100).toFixed(2)+'%</p>'
+                        res+='<p><div style="width:'+(params[i].data/total*100).toFixed(2)+'%;height:10px;background-color:'+params[i].color+';"></div>'+params[i].seriesName+': '+params[i].data+'元 / '+(params[i].data/total*100).toFixed(2)+'%</p>'
                         }
                         return res;
                     }

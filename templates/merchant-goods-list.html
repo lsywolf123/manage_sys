@@ -137,10 +137,10 @@
         <li>
             <ul class="premium-menu nav nav-list collapse in">
                 <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 产品管理</a></li>
-                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 消费列表</a></li>
-                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 消费明细</a></li>
-                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 财务报表</a></li>
-                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 分析报表</a></li>
+                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 销售明细</a></li>
+                <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 月销统计</a></li>
+                <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 销售总表</a></li>
+                <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 销售对比</a></li>
             </ul>
         </li>
         <li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i
@@ -168,15 +168,15 @@
 
 <div class="content">
     <div class="header">
-        <h1 class="page-title">商品列表</h1>
+        <h1 class="page-title">产品列表</h1>
         <ul class="breadcrumb">
             <li><a href="/index">首页</a></li>
-            <li><a href="/merchant-goods-list?page=1&type=&content=">商品列表</a></li>
+            <li><a href="/merchant-goods-list?page=1&type=&content=">产品列表</a></li>
         </ul>
     </div>
     <div class="main-content">
         <div class="btn-toolbar list-toolbar">
-            <a href="/merchant-add-goods" class="btn btn-primary"><i class="fa fa-plus"></i> 添加商品</a>
+            <a href="/merchant-add-goods" class="btn btn-primary"><i class="fa fa-plus"></i> 添加产品</a>
             <form action="/merchant-goods-list" id="search" method="post">
                 <button type="submit" class="btn btn-default pull-right">搜索</button>
                 <input name="content0" id="div0" type="text" class="form-control span12 pull-right"
@@ -192,8 +192,8 @@
                 </select>
                 <select name="type" id="div100" class="form-control pull-right" onchange="Cmd(this)"
                         style="width:10%;margin-right:10px">
-                    <option value="0">商品编号</option>
-                    <option value="1">商品名字</option>
+                    <option value="0">产品编号</option>
+                    <option value="1">产品名字</option>
                     <option value="2">库存数</option>
                 </select>
             </form>
@@ -207,12 +207,12 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th><a href="#">商品编号</a></th>
-                <th><a href="#">商品名字</a></th>
-                <th><a href="#">商品价格</a></th>
-                <th><a href="#">商品报价</a></th>
-                <th><a href="#">商品利润</a></th>
-                <th><a href="#">商品库存</a></th>
+                <th><a href="#">产品编号</a></th>
+                <th><a href="#">产品名字</a></th>
+                <th><a href="#">产品价格</a></th>
+                <th><a href="#">产品报价</a></th>
+                <th><a href="#">产品利润</a></th>
+                <th><a href="#">产品库存</a></th>
                 <th><a href="#">销售额</a></th>
                 <th style="width: 5.5em;"></th>
             </tr>
