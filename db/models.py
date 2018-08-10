@@ -141,7 +141,7 @@ class Customer(BASE, ScoreBase):
     id = Column(String(length=128), nullable=False, default=uuid.uuid1, primary_key=True)
     user_id = Column(String(128), nullable=False)
     merchant_id = Column(String(128), nullable=True)
-    serial_num = Column(Integer, nullable=False)
+    serial_num = Column(String(255), nullable=False)
     name = Column(String(255), nullable=True)
     email = Column(String(255), nullable=True)
     phone = Column(String(255), nullable=True)
@@ -156,7 +156,7 @@ class Customer(BASE, ScoreBase):
     gain_money = Column(Integer, nullable=False, default=0)
 
 
-#  会员信息表
+#  商品信息表
 class Goods(BASE, ScoreBase):
     """Represents a goods
     """

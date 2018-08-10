@@ -101,6 +101,27 @@ def bind_customer(merchant_id, serial_num, password, name, identify_id, phone, e
     return db.customer_bind_by_serial_num(serial_num, values)
 
 
+# 添加会员
+def add_customer(merchant_id, name, identify_id, phone, email, we_chat):
+    now = datetime.datetime.now()
+    values = {
+        'serial_num': phone
+    }
+    ref = user.create_user(values['serial_num'], '123456', '3', now)
+    values = {
+        'user_id': ref['id'],
+        'merchant_id': merchant_id,
+        'serial_num': phone,
+        'name': name,
+        'identify_id': identify_id,
+        'phone': phone,
+        'email': email,
+        'we_chat': we_chat
+    }
+    db.customer_create(values)
+    return True
+
+
 # 会员列表
 def customer_list_by_merchant_id(merchant_id, page):
     customer_count = db.customer_count_by_merchant_id(merchant_id)

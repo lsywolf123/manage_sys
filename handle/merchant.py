@@ -26,39 +26,33 @@ class MerchantBindCustomerHandle(BaseHandler):
     def post(self):
         merchant_id = self.get_secure_cookie('merchant_id')
         username = self.get_secure_cookie('username')
-        serial_num = self.get_argument('serial_num')
-        password = self.get_argument('password')
         name = self.get_argument('name')
         identify_id = self.get_argument('identify_id')
         phone = self.get_argument('phone')
         email = self.get_argument('email')
         we_chat = self.get_argument('we_chat')
         message = None
-        if not serial_num:
-            message = '编号为必填项'
-        elif not password:
-            message = '密码为必填项'
-        elif not name:
+        if not name:
             '姓名为必填项'
         elif not identify_id:
             message = '身份证号为必填项'
         elif not phone:
             message = '手机号码为必填项'
         if message:
-            self.render('merchant-bind.html', message=message, username=username, serial_num=serial_num,
-                        password=password, name=name,identify_id=identify_id, phone=phone, email=email, we_chat=we_chat)
+            self.render('merchant-bind.html', message=message, username=username,
+                        name=name,identify_id=identify_id, phone=phone, email=email, we_chat=we_chat)
             return
         try:
-            ref = merchant.bind_customer(merchant_id, serial_num, password, name, identify_id, phone, email, we_chat)
+            ref = merchant.add_customer(merchant_id, name, identify_id, phone, email, we_chat)
         except Exception as e:
             message = e.message
-            self.render('merchant-bind.html', message=message, username=username, serial_num=serial_num,
-                        password=password, name=name,identify_id=identify_id, phone=phone, email=email, we_chat=we_chat)
+            self.render('merchant-bind.html', message=message, username=username,
+                        name=name,identify_id=identify_id, phone=phone, email=email, we_chat=we_chat)
             return
 
         if ref:
-            self.render('merchant-bind.html', message='绑定成功', username=username, serial_num=serial_num,
-                        password=password, name=name,identify_id=identify_id, phone=phone, email=email, we_chat=we_chat)
+            self.render('merchant-bind.html', message='添加成功', username=username,
+                        name=name,identify_id=identify_id, phone=phone, email=email, we_chat=we_chat)
 
 
 class MerchantCustomerListHandle(BaseHandler):

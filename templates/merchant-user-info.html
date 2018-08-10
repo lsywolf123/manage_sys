@@ -124,8 +124,10 @@
                 class="fa fa-book"></i> 基础管理<i class="fa fa-collapse"></i></a></li>
         <li>
             <ul class="premium-menu nav nav-list collapse">
-                <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 产品管理</a></li>
-                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 销售明细</a></li>
+                <li><a href="/merchant-goods-list?page=1&type=&content="><span class="fa fa-caret-right"></span>
+                    产品管理</a></li>
+                <li><a href="/merchant-consume-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 销售明细</a>
+                </li>
                 <li><a href="/merchant-consume-info"><span class="fa fa-caret-right"></span> 月销统计</a></li>
                 <li><a href="/merchant-account-book"><span class="fa fa-caret-right"></span> 销售总表</a></li>
                 <li><a href="/merchant-account-analysis"><span class="fa fa-caret-right"></span> 销售对比</a></li>
@@ -136,7 +138,7 @@
         <li>
             <ul class="dashboard-menu nav nav-list collapse in">
                 <li><a href="/index"><span class="fa fa-caret-right"></span> 会员总览</a></li>
-                <li><a href="/merchant-bind-customer"><span class="fa fa-caret-right"></span> 绑定会员</a></li>
+                <li><a href="/merchant-bind-customer"><span class="fa fa-caret-right"></span> 添加会员</a></li>
                 <li><a href="/merchant-customer-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 会员列表</a>
                 </li>
             </ul>
@@ -148,7 +150,8 @@
                 <li><a href="/merchant-rule"><span class="fa fa-caret-right"></span> 兑换规则</a></li>
                 <li><a href="/merchant-goldbean"><span class="fa fa-caret-right"></span> 积分活动</a></li>
                 <li><a href="/merchant-exchange-goldbean"><span class="fa fa-caret-right"></span> 兑换积分</a></li>
-                <li><a href="/merchant-exchange-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 兑换列表</a></li>
+                <li><a href="/merchant-exchange-list?page=1&type=&content="><span class="fa fa-caret-right"></span> 兑换列表</a>
+                </li>
             </ul>
         </li>
     </ul>
@@ -163,7 +166,7 @@
         </ul>
     </div>
     <div class="main-content">
-        <p><font size="3" face="Verdana"><strong>用户编号：</strong></font><font size="1"
+        <p><font size="3" face="Verdana"><strong>用户账号：</strong></font><font size="1"
                                                                             face="Verdana">{{ customer_info['serial_num'] }}</font>
         </p>
         <div class="panel panel-default" style="margin-top:30px">
@@ -253,7 +256,11 @@
                             <tr>
                                 <th>{{ consume['num'] }}</th>
                                 <td>{{ consume['consumer_name'] }}</td>
+                                {% if consume['goods_id'] == '0' %}
+                                <td>0元</td>
+                                {% else %}
                                 <td>{{ consume['consume_money'] }}元</td>
+                                {% end %}
                                 <td>{{ int(consume['consume_money'] * consume['multiple']) }}</td>
                                 <td>{{ consume['created_at'] }}</td>
                             </tr>

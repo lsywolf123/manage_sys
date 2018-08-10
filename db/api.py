@@ -987,4 +987,23 @@ def goods_list_asc(merchant_id, session=None):
 
 
 if __name__=='__main__':
-    pass
+    values = {
+        'id': '96fc62ae-6d89-11e8-a3ff-3497f688d3c6',
+        'user_id': '96f3fe40-6d89-11e8-973e-3497f688d3c6',
+        'merchant_id': '0cb0a34f-6d89-11e8-8d21-3497f688d3c6',
+        'serial_num': '15773276071',
+        'name': '张春辉',
+        'email': '330297189@qq.com',
+        'phone': '15773276071',
+        'identify_id':'430381198108124116',
+        'wechat': 'wiealsjd2412',
+        'gb': 17000,
+        'total_gb': 42000,
+        'given_gb': 30000,
+        'consume_gb':12000,
+        'qualification_gb':12000,
+        'gb_exchange_count':2,
+        'gain_money':708,
+        'created_at': '2018-06-11 23:16:20',
+    }
+    customer_create(values)

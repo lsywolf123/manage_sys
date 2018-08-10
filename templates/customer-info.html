@@ -210,8 +210,8 @@
                     <li>
                         <span class="text-info fa fa-paper-plane fa-fw"></span>
                         兑换资格：
-                        {% if customer_info['qualification_gb'] > 5000 %} 有
-                        {% else %} 无（离兑换资格还差{{5000 - customer_info['qualification_gb']}}推荐基金）
+                        {% if customer_info['qualification_gb'] > 500 %} 有
+                        {% else %} 无（离兑换资格还差{{500 - customer_info['qualification_gb']}}推荐基金）
                         {% end %}
                     </li>
                 </ul>
@@ -239,7 +239,11 @@
                                 <tr>
                                     <th>{{consume['num']}}</th>
                                     <td>{{consume['consumer_name']}}</td>
-                                    <td>{{consume['consume_money']}}元</td>
+                                    {% if consume['goods_id'] == '0' %}
+                                    <td>0元</td>
+                                    {% else %}
+                                    <td>{{ consume['consume_money'] }}元</td>
+                                    {% end %}
                                     <td>{{int(consume['consume_money'] * consume['multiple'])}}</td>
                                     <td>{{consume['created_at']}}</td>
                                 </tr>

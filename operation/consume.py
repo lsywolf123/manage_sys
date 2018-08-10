@@ -144,6 +144,8 @@ def consume_list_by_customer_id(merchant_id, customer_id):
     count = 1
     for consume in temp:
         consume_dict = dict(consume)
+        if consume_dict['goods_id'] == u'0':
+            consume_dict['consumer_name'] = '商家赠送'
         consume_dict['num'] = count
         consume_list.append(consume_dict)
         count += 1
@@ -157,6 +159,8 @@ def consume_get_by_customer_id(customer_id):
     count = 1
     for consume in temp:
         consume_dict = dict(consume)
+        if consume_dict['goods_id'] == u'0':
+            consume_dict['consumer_name'] = '商家赠送'
         consume_dict['num'] = count
         consume_list.append(consume_dict)
         count += 1
